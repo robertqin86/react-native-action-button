@@ -76,7 +76,7 @@ export default class ActionButton extends Component {
   getOffsetXY() {
     return {
       // paddingHorizontal: this.props.offsetX,
-      paddingVertical: this.props.offsetY
+      paddingBottom: this.props.offsetY
     };
   }
 
@@ -335,7 +335,7 @@ export default class ActionButton extends Component {
 
     setTimeout(() => {
       if (this.mounted) {
-        this.setState({ active: false, resetToken: this.state.resetToken });  
+        this.setState({ active: false, resetToken: this.state.resetToken });
       }
     }, 250);
   }
